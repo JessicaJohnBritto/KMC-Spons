@@ -39,6 +39,11 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
 </style>
 </head>
 
@@ -89,7 +94,7 @@
     <br>
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"style="margin-bottom:0px;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -116,11 +121,11 @@
         </button>
         <br>
     </div>
-    <div class="jumbotron jumbotron-fluid" style="background-color:rgb(241, 241, 241); padding:1rem;">
+    <div class="jumbotron jumbotron-fluid" style="background-color:rgb(241, 241, 241); margin-top:0px; margin-bottom:0px; padding:1rem;">
         <!-- <center> -->
         <div class="container row" style="    padding: 1rem;
-        margin-left: 0px;
-        margin-right: 0px;">
+    margin-left: 0px;
+    margin-right: 0px;">
             <div class="col lg-6">
                 <h1 class="display-4"><strong>Raise funds</strong></h1>
                 <i>for a cause</i><br/>
@@ -144,29 +149,36 @@
         <div class="ind-covid-response">
             <div class="icr-content container">
                 <div class="icr-header">
-                    <h1 class="text-center" style="  color:white ;">India COVID Response Fund</h1>
+                    <h1 class="text-center" style="  color:white ; padding-top:1rem; padding-bottom: 0.5rem;">India COVID Response Fund</h1>
                     <div class="icr-header-bar"></div>
                 </div>
-                <p class="icr-desciption" style="  color:white ;">India COVID Response Fund (ICRF) is best described as a giving collective that enables both individuals and organisations to respond together to COVID. In 2020, ICRF raised ₹220Cr+, impacting the lives of 56L+ people in India. We re-launched
+                <center><hr style=" color:red; padding-bottom: 1rem; width:5rem; height: 0.5rem;"></center> 
+
+                <p class="icr-desciption" style="  color:white ; padding-bottom: 1rem;">India COVID Response Fund (ICRF) is best described as a giving collective that enables both individuals and organisations to respond together to COVID. In 2020, ICRF raised ₹220Cr+, impacting the lives of 56L+ people in India. We re-launched
                     ICRF in April 2021, in response to the grave second wave of COVID to support gaps in healthcare and other critical needs.</p>
 
 
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 ">
+        <div class="row" style="padding-bottom: 1rem; padding-right:6rem; padding-left:6rem;">
+            <div class="col md-6 ">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title" style="color:red;">15L+</h5>
                         <p class="card-text">Donors supporting COVID missions across healthcare, humanitarian and cash relief</p>
                     </div>
                 </div>
-                <div class="d-inline-flex p-2" style="align-items: center;">
-                    <button class="btn btn-danger"></button>
-                </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:red;">300+</h5>
+                        <p class="card-text">NGOs and implementation partners working to create widespread impact.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title" style="color:red;">300+</h5>
@@ -175,9 +187,28 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        asd
+        <!-- <div class="row" style="padding-bottom: 1rem; padding-right:6rem; padding-left:6rem;">
+            <div class="col md-6 ">
+                <button class="btn btn-primary" style="background-color:blue;">Save 20 people</button>
+            </div>
+
+            <div class="col md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:red;">300+</h5>
+                        <p class="card-text">NGOs and implementation partners working to create widespread impact.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:red;">300+</h5>
+                        <p class="card-text">NGOs and implementation partners working to create widespread impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
 
 
@@ -257,33 +288,194 @@
             </div>
         </div>
     </div>
-    <div class="homescreen-why-gi">
+
+    <div class="homescreen-why-gi" style="background-color:#f2f2f2; padding-top:1rem; padding-bottom:1rem;">
         <div class="hs-why-gi-left container">
-            <h2>India&#x27;s largest and most trusted giving platform</h2>
+           <center> <h2 style="padding-bottom: 1rem;">India&#x27;s largest and most trusted giving platform</h2>
+        <hr style="color:rgb(255 80 80); width:10%;">
+        </center>
             <div class="hs-why-gi-left-line"></div>
-            <div class="hs-why-gi-left-list">
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/Monthlygiving.png" height="40px" alt="Monthly Giving" class="hs-why-gi-left-item-image" />
+            <div class="hs-why-gi-left-list row">
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/Monthlygiving.png" height="40px" alt="Monthly Giving" class="hs-why-gi-left-item-image" />
                     <p>Opt to give monthly for our missions or NGO programs and make an impact</p>
                 </div>
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/GiveIndiaFundraisers.png" height="40px" alt="GiveIndia Fundraisers" class="hs-why-gi-left-item-image" />
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/GiveIndiaFundraisers.png" height="40px" alt="GiveIndia Fundraisers" class="hs-why-gi-left-item-image" />
                     <p>Support crowdfunding campaigns with one-time donations</p>
                 </div>
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/CorporatePhilanthropy.png" height="40px" alt="Corporate Philanthropy" class="hs-why-gi-left-item-image" />
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/CorporatePhilanthropy.png" height="40px" alt="Corporate Philanthropy" class="hs-why-gi-left-item-image" />
                     <p>CSR and employee giving through trusted NGOs</p>
                 </div>
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/ChoiceofCauses.png" height="40px" alt="Choice of Causes" class="hs-why-gi-left-item-image" />
+            </div>
+            <div  class="hs-why-gi-left-list row">
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/ChoiceofCauses.png" height="40px" alt="Choice of Causes" class="hs-why-gi-left-item-image" />
                     <p>Pick from causes like education, children, livelihoods, etc</p>
                 </div>
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/NetworkofVerifiedNGOs.png" height="40px" alt="Network of verified NGOs" class="hs-why-gi-left-item-image" />
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/NetworkofVerifiedNGOs.png" height="40px" alt="Network of verified NGOs" class="hs-why-gi-left-item-image" />
                     <p>Partnered with 2,000+ NGOs across the country</p>
                 </div>
-                <div class="hs-why-gi-left-item"><img src="https://cdn.givind.org/static/images/home/WorldwideGiving.png" height="40px" alt="Worldwide giving" class="hs-why-gi-left-item-image" />
+                <div class="hs-why-gi-left-item col lg-6"><img src="https://cdn.givind.org/static/images/home/WorldwideGiving.png" height="40px" alt="Worldwide giving" class="hs-why-gi-left-item-image" />
                     <p>Donations in all currencies with tax benefit for India, US and UK</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="homescreen-why-gi" style="background-color:#ffffff; padding-top:2rem; padding-bottom:1rem;">
+        <div class="hs-why-gi-left container">
+           <center> <h2 style="padding-bottom: 1rem;">In the News</h2>
+        <hr style="color:rgb(255 80 80); width:10%;">
+        </center>
+        </div>
+        </div>
 
+
+    <div class="container my-4" >
+
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        
+          <!--Controls-->
+          <!-- <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
+          </div> -->
+          <!--/.Controls-->
+        
+          <!--Indicators-->
+          <ol class="carousel-indicators" style="background-color:rgb(151, 99, 99);margin-bottom:0px;">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1" ></li>
+            
+          </ol>
+          <!--/.Indicators-->
+        
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox" style="margin-bottom:1rem;">
+        
+            <!--First slide-->
+            <div class="carousel-item active">
+        
+              <div class="col-md-3" style="float:left">
+               <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              
+               <div class="col-md-3" style="float:left">
+               <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.First slide-->
+        
+            <!--Second slide-->
+            <div class="carousel-item">
+        
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3" style="float:left">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--/.Second slide-->
+        
+           
+        
+          </div>
+          <!--/.Slides-->
+        
+        </div>
+        <!--/.Carousel Wrapper-->
+        </div>
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark" style="
 background-color: #444444;
